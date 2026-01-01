@@ -1,6 +1,6 @@
-# Heel de body een ander lettertype geven
+ /*Heel de body een ander lettertype geven*/
 body {
-  font-family: "Inter", "Roboto", "Segoe UI", sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
 /* H4 paars maken */
