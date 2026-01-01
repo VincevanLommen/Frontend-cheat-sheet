@@ -1,0 +1,9 @@
+# Heel de body een ander lettertype geven
+body {
+  font-family: "Inter", "Roboto", "Segoe UI", sans-serif;
+}
+
+/* H4 paars maken */
+h4 {
+  color: #7b2cbf; /* mooi modern paars */
+}
