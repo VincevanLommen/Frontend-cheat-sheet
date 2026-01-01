@@ -15,7 +15,7 @@ table {
 
 /* H4 paars maken */
 h4 {
-  color: var(--paars); /* mooi modern paars */
+  color: var(--paars); 
 }
 
 
@@ -46,3 +46,210 @@ h4 {
 .achtergrondkleur {
     color: rgb(255, 255, 255);
 }
+
+
+
+/* Basis demo blok */
+.demo {
+  width: 150px;
+  height: 60px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Width */
+.width {
+  width: 250px; /* toont bredere doos */
+}
+
+/* Height */
+.height {
+  height: 120px; /* toont hogere doos */
+}
+
+/* Padding */
+.padding {
+  padding: 20px;
+  background: lightgreen;
+}
+
+/* Border */
+.border {
+  border: 5px solid red;
+}
+
+/* Margin */
+.margin {
+  margin: 40px;
+  background: lightblue;
+}
+
+/* Box-sizing */
+.boxsize {
+  padding: 20px;
+  border: 5px solid black;
+  box-sizing: border-box; /* toont dat totale breedte gelijk blijft */
+}
+
+
+
+
+
+
+
+
+
+.flex-demo {
+  display: flex;
+  gap: 10px;
+  background: #ddd;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+.flex-demo div {
+  background: #bbb;
+  padding: 10px;
+  font-weight: bold;
+}
+
+
+/* flex-direction */
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+/* justify-content */
+.flex-justify {
+  justify-content: space-between;
+}
+
+/* align-items */
+.flex-align {
+  height: 80px;
+  align-items: center;
+}
+
+/* flex-grow */
+.grow1 {
+  flex-grow: 1;
+}
+
+.grow2 {
+  flex-grow: 2;
+}
+
+/* flex-shrink */
+.shrink0 {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.shrink1 {
+  flex-shrink: 1;
+  width: 200px;
+}
+
+/* flex-basis */
+.basis100 {
+  flex-basis: 100px;
+}
+
+.basis50 {
+  flex-basis: 50px;
+}
+
+.basis200 {
+  flex-basis: 200px;
+}
+
+/* flex-wrap */
+.flex-wrap-demo {
+  flex-wrap: wrap;
+  width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.grid-demo {
+  display: grid;
+  background: #ddd;
+  padding: 10px;
+  margin-bottom: 1rem;
+  gap: 10px;
+}
+
+.grid-demo div {
+  background: #bbb;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* display: grid */
+.grid-basic {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* gap */
+.grid-gap {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* grid-template-columns */
+.grid-cols {
+  grid-template-columns: 100px 200px 100px;
+}
+
+/* fr-eenheid */
+.grid-fr {
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+/* meerdere kolommen samen nemen */
+.grid-span {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
+/* rij- en kolomnummers */
+.grid-lines {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.big {
+  grid-column: 1 / 3;
+}
+
+/* grid-template-areas */
+.grid-areas {
+  grid-template-areas:
+    "header header header"
+    "main main side"
+    "footer footer footer";
+  grid-template-columns: 2fr 2fr 1fr;
+}
+
+.header { grid-area: header; }
+.main   { grid-area: main; }
+.side   { grid-area: side; }
+.footer { grid-area: footer; }
