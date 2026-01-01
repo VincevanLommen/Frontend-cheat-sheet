@@ -1,6 +1,13 @@
- /*Heel de body een ander lettertype geven*/
+:root {
+  --paars: rgb(247, 12, 228); /* variable */
+}
+
+
+
+/*Heel de body een ander lettertype geven*/
 body {
   font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
 }
 table {
     font-size: 3em
@@ -8,5 +15,34 @@ table {
 
 /* H4 paars maken */
 h4 {
-  color: #7b2cbf; /* mooi modern paars */
+  color: var(--paars); /* mooi modern paars */
+}
+
+
+#links {
+    text-align: left;
+}
+
+#midden {
+    text-align: center;
+}
+
+#rechts {
+    text-align: right;
+}
+
+#r {
+    background-color: red;
+    
+}
+#g {
+    background-color: green;
+}
+#b {
+    background-color: blue;
+}
+
+
+.achtergrondkleur {
+    color: rgb(255, 255, 255);
 }
