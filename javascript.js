@@ -23,7 +23,7 @@ const buttonJS = () => {
 const apiRequest = async () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/posts');
     const data = await response.json();
-    jsonData = JSON.stringify(data)
+    jsonData = JSON.stringify(data) //Geen object meer ma string!
     placeholderData = document.getElementById("apiResult");
 
     data.forEach(element => {
@@ -35,3 +35,44 @@ const apiRequest = async () => {
 };
 
 
+console.log(`A == A: ${'A' == 'A'}`); // true
+console.log(`A === A: ${'A' === 'A'}`); // true
+console.log(`A == a: ${'A' == 'a'}`); // false
+console.log(`A === a: ${'A' === 'a'}`); // false
+console.log(`5 == '5': ${5 == '5'}`); // true
+console.log(`5 === '5': ${5 === '5'}`); // false
+console.log(`null == undefined: ${null == undefined}`); // true
+console.log(`null === undefined: ${null === undefined}`); // false
+console.log(`0 == false: ${0 == false}`); // true
+console.log(`0 === false: ${0 === false}`); // false
+console.log(`2 arrays optellen:`);
+console.log(`a = [a, b, c]`);
+let a = ['a', 'b', 'c'];
+
+console.log(`b = [d, e, f]`);
+let b = ['d', 'e', 'f'];
+
+console.log(`a + b = [${[...a, ...b].join(", ")}]`);
+
+console.log("eerste entry verwijderen")
+
+let c = ['x', 'y', 'z'];
+console.log(`c = [${c.join(", ")}]`);
+c.shift(); // verwijdert eerste
+console.log(`c.shift() → [${c.join(", ")}]`);
+console.log("Laatste entry verwijderen")
+
+let d = ['x', 'y', 'z'];
+console.log(`d = [${d.join(", ")}]`);
+d.pop(); // verwijdert laatste
+console.log(`d.pop() → [${d.join(", ")}]`);
+console.log("Filteren")
+
+
+let e = [1, 2, 3, 4, 5];
+console.log(`e = [${e.join(", ")}]`);
+
+let even = e.filter(n => n % 2 === 0);
+console.log(`e.filter(even) → [${even.join(", ")}]`);
+
+console.log(`😛🔫`);
