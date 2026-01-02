@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML cheat sheet ~ head -> title</title>
-  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="./stylesheet.css">
 </head>
 
 <body>
@@ -23,3 +23,26 @@
         </ul>
       </nav>
     <hr>
+
+    <h1 id = "onclick" onclick="clickJS()">Onclick</h1>
+    <h1 id = "onhover" onmouseover="hoverJS()" onmouseout="hoveroutJS()">Onhover</h1>
+
+    <hr>
+
+    <input type="checkbox" id="checkboxJS" onclick="checkboxJS()">
+    <label for="checkboxJS">Checkbox</label>
+
+    <br><br>
+
+    <label for="textJS">Tekst van tekstveld lezen door knop</label>
+    <input type="text" id="textJS"  placeholder="qwerty">
+    <input type="button" value="Click me" onclick="buttonJS()">
+
+    <hr>
+
+    <label for="Api test">API test</label>
+    <input type="button" value="Click me" onclick="apiRequest()">
+    <div id="apiResult"></div>
+  </main>
+  <script src="javascript.js"></script>
+</body>
