@@ -35,6 +35,26 @@ const apiRequest = async () => {
 };
 
 
+const validateFormJS = () => {
+    const numberInput = document.getElementById("numberJS").value;
+    const resultPlaceholder = document.getElementById("formResultJS");
+    if (numberInput === "" || isNaN(numberInput)) {
+        resultPlaceholder.innerText = "Vul een geldig nummer in.";
+    } else if (Number(numberInput) > 20) {
+        resultPlaceholder.innerText = "Nummer mag niet groter zijn dan 20.";
+    } else {
+        resultPlaceholder.innerText = "Cava";
+    }
+}
+
+
+const optellen = () => {
+    huidig = document.getElementById("Optellen").innerText;
+    huidigNum = Number(huidig);
+    huidigNum += 1;
+    document.getElementById("Optellen").innerText = huidigNum;
+}
+
 console.log(`A == A: ${'A' == 'A'}`); // true
 console.log(`A === A: ${'A' === 'A'}`); // true
 console.log(`A == a: ${'A' == 'a'}`); // false
@@ -76,3 +96,7 @@ let even = e.filter(n => n % 2 === 0);
 console.log(`e.filter(even) → [${even.join(", ")}]`);
 
 console.log(`😛🔫`);
+
+
+
+setInterval(optellen, 1000);
