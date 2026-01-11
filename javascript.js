@@ -72,7 +72,7 @@ let a = ['a', 'b', 'c'];
 console.log(`b = [d, e, f]`);
 let b = ['d', 'e', 'f'];
 
-console.log(`a + b = [${[...a, ...b].join(", ")}]`);
+console.log(`c = [...a, ...b] = ${[...a, ...b]}`);
 
 console.log("eerste entry verwijderen")
 
